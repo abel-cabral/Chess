@@ -1,14 +1,15 @@
 package model.application;
 
-import boardgame.Board;
-import boardgame.Position;
+import chess.ChessMatch;
 
 public class Program {
 
 	public static void main(String[] args) {
-		Board temp = new Board(8, 8);
+		// Unicializa o tabuleiro
+		ChessMatch chessMatch = new ChessMatch();
 		
-
+		// Imprime a disposicao atual do tabuleiro
+		UI.printBoard(chessMatch.getPieces());
 	}
 
 }

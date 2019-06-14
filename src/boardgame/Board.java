@@ -10,7 +10,8 @@ public class Board {
 		this.columns = columns;
 		setPieces(new Piece[rows][columns]);
 	}	
-
+	
+	// Getters and Setters
 	private void setPieces(Piece[][] pieces) {
 		this.pieces = pieces;
 	}
@@ -31,6 +32,14 @@ public class Board {
 		this.columns = columns;
 	}
 	
+	// Methods
+	public Piece piece(int row, int column) {
+		return pieces[row][column];
+	}
+	
+	public Piece piece(Position position) {
+		return pieces[position.getRow()][position.getColumn()];
+	}
 	
 	
 	
