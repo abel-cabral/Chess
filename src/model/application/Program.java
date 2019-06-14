@@ -1,9 +1,12 @@
 package model.application;
 
+import boardgame.Position;
+
 public class Program {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		Position temp = new Position(4, 5);
+		System.out.println(temp.toString());
 
 	}
 
